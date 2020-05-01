@@ -1,0 +1,56 @@
+.about {
+    background-image: url(".../../../../../assets/images/about-image.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 20vh;
+    .about-header {
+        .about-title {
+            font-size: 4em;
+            font-family: "Playfair Display";
+            margin: 10vh 0 0 9vw;
+            color: #626C7B;
+            #about-title-a {
+                border: 5px solid #ABB6C5;
+                border-radius: 50%;
+                padding: 0 15px;
+                background-color: white;
+            }
+        }
+    }
+    .about-content {
+        background-color: #F1F2FE;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10vw;
+        .about-line {
+            display: flex;
+            flex-direction: column;
+            .about-rectangle {
+                margin: 45px 0 45px 13px;
+            }
+        }
+        .about-me {
+            p {
+                text-align: justify;
+                padding-right: 30px;
+                font-size: 1.6em;
+                margin: 8vh 0 8vh 13px;
+            }
+        }
+    }
+    .about-button {
+        background-color: #F1F2FE;
+        text-align: center;
+        padding: 20px 0;
+        .btn-outline-info {
+            font-size: 2em;
+            padding: 15px 30px;
+            border-color: #647895;
+            color: #647895;
+            &:hover {
+                background-color: #647895;
+                color: white;
+            }
+        }
+    }
+}

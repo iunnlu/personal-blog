@@ -1,0 +1,86 @@
+.contact {
+    background-color: #F1F2FE;
+    .header {
+        margin: 4vh 0 0 0;
+        text-align: center;
+        #header-slogan {
+            display: inline-block;
+            font-size: 1.5em;
+            font-family: "monserrat", serif;
+            text-transform: uppercase;
+            background-color: #647895;
+            color: white;
+            border-radius: 5px;
+            padding: 7px 30px;
+            opacity: .7;
+        }
+        #header-title {
+            font-size: 4em;
+            font-family: "playfair display", serif;
+            font-weight: bold;
+        }
+    }
+    form {
+        margin: 1vh 0 5vh 0;
+        .row {
+            margin: 2vh 0;
+        }
+        .form-control {
+            width: 80%;
+            border-color: #bec4ce;
+            padding: 25px 10px;
+            &:focus {
+                box-shadow: none;
+                border-color: black;
+            }
+            &::placeholder {
+                font-family: "monserrat", sans-serif;
+                font-size: 0.8em;
+            }
+        }
+        .textarea-col {
+            margin-left: 9.6%;
+            .form-control {
+                width: 89.4%;
+                padding: 10px;
+            }
+        }
+        .button-col {
+            text-align: center;
+            margin: 4vh 0;
+            .btn-info {
+                background-color: #647895;
+                font-size: 2em;
+                padding: 15px 30px;
+                border-color: #6a7d99;
+                color: white;
+                &:hover {
+                    background-color: #3c4f6b;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact {
+        form {
+            margin-top: 2vh;
+            .form-control {
+                width: 100%;
+            }
+            .row {
+                margin: -1vh 0;
+            }
+            .col {
+                margin: 1.25vh 0;
+            }
+            .textarea-col {
+                margin-left: 0;
+                .form-control {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
