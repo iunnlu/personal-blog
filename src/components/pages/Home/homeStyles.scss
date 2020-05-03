@@ -6,9 +6,14 @@ $home-light-color: #ABB6C5;
     src: url("../../../assets/MrDeHaviland-Regular.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .home {
-    margin: 0px;
+    margin-bottom: 10vh;
     padding: 0px;
+    min-height: 100%;
     .home-image {
         position: absolute;
         right: 0px;
@@ -24,7 +29,7 @@ $home-light-color: #ABB6C5;
     .home-content-container {
         width: 40vw;
         position: relative;
-        top: 10vh;
+        top: 13vh;
         margin-left: 7vw;
         opacity: 0;
         animation: home-content-anim 2s 1s 1 forwards;
@@ -42,7 +47,8 @@ $home-light-color: #ABB6C5;
             font-size: 1.6em;
             line-height: 35px;
             text-align: justify;
-            margin-top: 3vh;
+            margin-top: 4vh;
+            margin-bottom: 3vh;
             padding-right: 3vw;
         }
         #welcome-title {
@@ -77,16 +83,20 @@ $home-light-color: #ABB6C5;
             }
             &:focus, &:active {
                 box-shadow: none !important;
+                background-color: rgb(78, 96, 128) !important;
             }
         }
     }
     .social-icons {
+        a {
+            color: #253142;
+        }
         position: fixed;
         display: flex;
         flex-direction: column;
-        color: #253142;
         transform: translateX(-300px);
         animation: social-icons-anim 2s 1s 1 forwards;
+        z-index: 2;
         #linkedin-icon, #github-icon, #instagram-icon{
             font-size: 5em;
             border-radius: 0 50% 50% 0;
@@ -123,7 +133,7 @@ $home-light-color: #ABB6C5;
             ul {
                 padding: 1.2vh 0;
                 list-style-type: none;
-                margin-left: 2vw;
+                margin-left: 5vw;
             }
             li {
                 font-family: "sitka text", serif;
@@ -183,6 +193,7 @@ $home-light-color: #ABB6C5;
 
 @media (max-width: 575.98px) {
     .home {
+        margin-bottom: 4vh;
         .home-content-container {
             margin: 40vh 0 0 0;
             width: 95vw;

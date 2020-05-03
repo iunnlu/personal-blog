@@ -1,56 +1,97 @@
 .about {
-    background-image: url(".../../../../../assets/images/about-image.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 20vh;
-    .about-header {
-        .about-title {
-            font-size: 4em;
-            font-family: "Playfair Display";
-            margin: 10vh 0 0 9vw;
-            color: #626C7B;
-            #about-title-a {
-                border: 5px solid #ABB6C5;
-                border-radius: 50%;
-                padding: 0 15px;
-                background-color: white;
-            }
+    margin-bottom: 10vh;
+    opacity: 0;
+    animation: about-anim 2s 1s forwards;
+    padding-top: 15vh;
+    .photo-col {
+        img{
+            width: 600px;
+            height: 400px;
         }
-    }
-    .about-content {
-        background-color: #F1F2FE;
         display: flex;
-        flex-direction: row;
-        padding-left: 10vw;
-        .about-line {
-            display: flex;
-            flex-direction: column;
-            .about-rectangle {
-                margin: 45px 0 45px 13px;
-            }
+        justify-content: center;
+        align-items: center;
+    }
+    .content-col {
+        .about-title {
+            font-size: 2em;
+            font-family: "Playfair Display";
+            color: white;
+            padding: 7px 30px;
+            border-radius: 5px;
+            background-color: #8F9DB5;
+            display: inline-block;
         }
         .about-me {
-            p {
-                text-align: justify;
-                padding-right: 30px;
-                font-size: 1.6em;
-                margin: 8vh 0 8vh 13px;
-            }
+            font-size: 1.3em;
+            text-align: justify;
+            line-height: 30px;
+            font-family: "monserrat", sans-serif;
+            margin: 2vh 0;
         }
-    }
-    .about-button {
-        background-color: #F1F2FE;
-        text-align: center;
-        padding: 20px 0;
         .btn-outline-info {
-            font-size: 2em;
+            font-size: 1.5em;
             padding: 15px 30px;
             border-color: #647895;
             color: #647895;
+            margin-top: 2vh;
             &:hover {
                 background-color: #647895;
                 color: white;
             }
         }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .about{
+        .content-col {
+            margin-top: 5vh;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about{
+        .photo-col{
+            img{
+                width: 700px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about{
+        .photo-col{
+            img{
+                width: 520px;
+                height: 310px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about{
+        .photo-col{
+            img{
+                width: 94vw;
+                height: 220px;
+            }
+        }
+    }
+}
+
+@keyframes about-anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
     }
 }

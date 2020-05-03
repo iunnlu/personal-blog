@@ -6,7 +6,6 @@ import './aboutStyles.scss';
 const About = () => {
     return (
         <section className="about" id="about">
-            <AboutHeader />
             <AboutContent />
         </section>
     )

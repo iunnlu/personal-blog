@@ -1,6 +1,9 @@
 @import "bootstrap";
 
 .blog {
+    opacity: 0;
+    animation: blog-anim 2s 1s forwards;
+    height: 100%;
     .container {
         .blog-header {
             margin: 4vh 0;
@@ -41,7 +44,7 @@
         }
         .card {
             border: 1px solid transparent;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+            border-color: #ced2d8;
             .card-body {
                 font-family: "playfair display", sans-serif;
                 #card-date, #show-more {
@@ -65,9 +68,12 @@
         .card-columns {
             @include media-breakpoint-only(sm) {
                 column-count: 2;
+            }
+            @include media-breakpoint-only(md) {
+                column-count: 2;
               }
         }
-        .button-col {
+        .button-blog-col {
             text-align: center;
             margin: 4vh 0;
             p {
@@ -85,5 +91,14 @@
         .card {
             margin: 3vh 2vw;
         }
+    }
+}
+
+@keyframes blog-anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
     }
 }

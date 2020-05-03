@@ -1,5 +1,8 @@
 .contact {
     background-color: #F1F2FE;
+    opacity: 0;
+    animation: contact-anim 2s 1s forwards;
+    padding-top: 10vh;
     .header {
         margin: 4vh 0 0 0;
         text-align: center;
@@ -45,7 +48,7 @@
                 padding: 10px;
             }
         }
-        .button-col {
+        .button-contact-col {
             text-align: center;
             margin: 4vh 0;
             .btn-info {
@@ -57,6 +60,18 @@
                 &:hover {
                     background-color: #3c4f6b;
                 }
+            }
+        }
+        .icon-contact-col {
+            text-align: center;
+            margin-top: 10vh;
+            .contact-arrow-up {
+                cursor: pointer;
+                font-size: 20px;
+                color: #4b5d79;
+                animation: icon-anim 1s infinite forwards;
+                position: relative;
+                bottom: 0x;
             }
         }
     }
@@ -82,5 +97,35 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 575.98px) {
+    .contact {
+        .header {
+            margin-top: 8vh;
+        }
+        form {
+            .button-col {
+                margin-top: 4vh;
+                margin-bottom: 4vh;
+            }
+        }
+    }
+}
+
+@keyframes contact-anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes icon-anim {
+    from {
+        bottom: 0px;
+    } to {
+        bottom: 20px;
     }
 }

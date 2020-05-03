@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
+import { FaArrowUp } from "react-icons/fa";
 
 const ContactForm = () => {
     return (
@@ -36,8 +37,13 @@ const ContactForm = () => {
                 </Col>
             </Row>
             <Row>
-                <Col className="button-col">
+                <Col className="button-contact-col">
                     <Button variant="info">Send Message</Button>
+                </Col>
+            </Row>
+            <Row>
+                <Col className="icon-contact-col">
+                    <a href="#home"><FaArrowUp className="contact-arrow-up" /></a>
                 </Col>
             </Row>
         </Form>

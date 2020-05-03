@@ -1,59 +1,45 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 
 const AboutContent = () => {
     return (
-        <>
-        <div className="about-content">
-            <div className="about-line">
-                <svg className="about-rectangle" width="10" height="41">
-                    <rect fill="rgba(200,202,204,1)" rx="0" ry="0" x="0" y="0" width="10" height="41">
-                    </rect>
-                </svg>
-                <svg className="about-ellipse" width="39" height="39">
-                    <ellipse fill="rgba(100,120,149,1)" rx="19.5" ry="19.5" cx="19.5" cy="19.5">
-                    </ellipse>
-                </svg>
-                <svg className="about-rectangle" width="10" height="41">
-                    <rect fill="rgba(200,202,204,1)" rx="0" ry="0" x="0" y="0" width="10" height="41">
-                    </rect>
-                </svg>
-                <svg className="about-ellipse" width="39" height="39">
-                    <ellipse fill="rgba(100,120,149,1)" rx="19.5" ry="19.5" cx="19.5" cy="19.5">
-                    </ellipse>
-                </svg>
-                <svg className="about-rectangle" width="10" height="41">
-                    <rect fill="rgba(200,202,204,1)" rx="0" ry="0" x="0" y="0" width="10" height="41">
-                    </rect>
-                </svg>
-                <svg className="about-ellipse" width="39" height="39">
-                    <ellipse fill="rgba(100,120,149,1)" rx="19.5" ry="19.5" cx="19.5" cy="19.5">
-                    </ellipse>
-                </svg>
-                <svg className="about-rectangle" width="10" height="41">
-                    <rect fill="rgba(200,202,204,1)" rx="0" ry="0" x="0" y="0" width="10" height="41">
-                    </rect>
-                </svg>
-                <svg className="about-ellipse" width="39" height="39">
-                    <ellipse fill="rgba(100,120,149,1)" rx="19.5" ry="19.5" cx="19.5" cy="19.5">
-                    </ellipse>
-                </svg>
-                <svg className="about-rectangle" width="10" height="41">
-                    <rect fill="rgba(200,202,204,1)" rx="0" ry="0" x="0" y="0" width="10" height="41">
-                    </rect>
-                </svg>
-            </div>
-            <div className="about-me">
-                <p style={{marginTop:"11vh"}}>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</p>
-                <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</p>
-                <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</p>
-                <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</p>
-            </div>
-        </div>
-        <div className="about-button">
-            <Button variant="outline-info">Download CV</Button>
-        </div>
-        </>
+        <Container className="about-content">
+            <Row>
+                
+                <Col className="photo-col col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7">
+                <div
+                    data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                ><Image
+                src="https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                rounded
+            /></div>
+                    
+                </Col>
+                <Col className="content-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-5">
+                <div
+                    data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                ><p className="about-title">
+                ABOUT ME
+            </p>
+            <p className="about-me">
+                I was born in 1996 in Istanbul. I'm living here since I'was born. I'm from Bilecik and have not got brother or sister.
+                I started to study computer engineering in Sakarya in 2014. I studied at the language school for 1 year when I started university and finished successfully. I graduated from university with a grade average of 2.93 in 2020.
+            </p>
+            <p className="about-me">
+                I completed my software internship abroad before graduating. I worked as a Frontend Developer in an ERP company in Slovenia for 3 months. I think that working abroad adds a lot to me.
+                After my graduation, I learned react native and designed the corona app application for mobile phones. I follow various courses on Java, Spring, Web Design and I try to improve myself.
+            </p>
+            <Button variant="outline-info">Download CV</Button></div>
+                    
+                </Col>
+            </Row>
+        </Container>
     )
 };
 
